@@ -1,0 +1,12 @@
+.Taskdetail{
+    width: 70%;
+    height: 100%;
+    background-color: #353a40;
+
+}
+
+.Taskcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -1,0 +1,6 @@
+.Tasklist{
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid rgb(128,128,128, 0.15);
+    position: relative;
+}

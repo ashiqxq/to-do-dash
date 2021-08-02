@@ -1,0 +1,25 @@
+.LeftPanel{
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid white; */
+    position: relative;
+}
+
+.line{
+    border: 1px solid grey;
+    opacity: 15%;
+    width: 95%;
+   
+}
+.task_manager_name{
+    border-right: 1px solid rgb(128,128,128, 0.15);
+}
+.task_manager_name > h3{
+    color: #A9A9A9;
+    opacity: 85%;
+    font-size: medium;
+    font-weight: lighter;
+}
+#teambreakhr{
+    margin-bottom: 0px;
+}

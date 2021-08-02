@@ -1,0 +1,7 @@
+.RestPanel{
+    height: 100%;
+    width: 80%;
+    /* border: 2px solid white; */
+    background-color: #2c3137;
+    border-radius: 0px 15px 15px 0px;
+}

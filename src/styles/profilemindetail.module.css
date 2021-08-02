@@ -1,0 +1,29 @@
+.profileavatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.namepanel > h2{
+    color: #bdc1c6;
+    opacity: 85%;
+    font-size: medium;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.namepanel > h5{
+    margin-top: 0px;
+    color: #A9A9A9;
+    font-size: x-small;
+    font-weight: 500;
+}
+
+.namepanel{
+    display: flex;
+    flex-direction: column;
+}
+
+.profiledetail{
+    padding-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+.task_progress{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.task_completion_detail{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.task_detail > h4{
+    color: #bdc1c6;
+    opacity: 85%;
+    font-size: 7px;
+    margin-top: 0px;
+}
+.task_detail >h5{
+    margin-top: 0px;
+    color: #A9A9A9;
+    font-size: 8px;
+    margin-bottom: 0px;
+}

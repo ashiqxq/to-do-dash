@@ -1,0 +1,31 @@
+.teamimg{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.teampanel{
+    margin-top: 0px;
+    position: absolute;
+    bottom: 2px;
+    margin-bottom: 20px;
+}
+.teamheader{
+    display: flex;
+    padding-left: 23px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}
+.teamavatars{
+    display: flex;
+    padding-left: 25px;
+    justify-content: flex-start;
+}
+.teamheader > h3{
+    font-size: 12px;
+    color:#bdc1c6;
+    /* margin-top: 10px; */
+}
+.teamavatar{
+    padding-right: 8px;
+}

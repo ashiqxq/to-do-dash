@@ -1,0 +1,21 @@
+.Taskheader{
+    border-left: 3px solid #6642d5;
+    border-bottom: 1px solid rgb(128,128,128, 0.15);
+    height: 10%;
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    top: 0;
+}
+
+h3{
+    color: white;
+    opacity: 85%;
+    font-size: 13px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
