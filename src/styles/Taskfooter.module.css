@@ -20,6 +20,9 @@
     justify-content: center;
     align-items: center;
 }
+.addTaskBtn:hover{
+    background-color: #14a9ee;
+}
 .addTaskBtn > h3{
     color: white;
     font-size: 8px;

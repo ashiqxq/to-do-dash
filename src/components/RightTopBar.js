@@ -10,7 +10,7 @@ function RightTopBar() {
             </avatar>
             </div>
             <div className="name">
-                <h4>Kandula Natasha</h4>
+                <h4>Natasha Baig</h4>
             </div>
             
         </div>

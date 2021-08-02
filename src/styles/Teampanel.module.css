@@ -3,6 +3,16 @@
     height: 20px;
     border-radius: 50%;
 }
+.teamavatar{
+    width: 20px;
+    height: 27px;
+    margin-top: 10px;
+    padding-right: 8px;
+}
+.teamimg:hover{
+    width: 27px;
+    height: 27px;
+}
 .teampanel{
     margin-top: 0px;
     position: absolute;
@@ -16,7 +26,7 @@
     display: flex;
     padding-left: 23px;
     justify-content: flex-start;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* margin-top: 10px; */
 }
 .teamavatars{
@@ -28,7 +38,4 @@
     font-size: 12px;
     color:#bdc1c6;
     /* margin-top: 10px; */
-}
-.teamavatar{
-    padding-right: 8px;
 }

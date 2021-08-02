@@ -7,8 +7,8 @@ class Taskcards extends Component {
         <div className={styles.Taskcard}>
             <div className={styles.taskcheck}>
                 <div className={styles.taskcheckbox}>
-                    <input type="checkbox" id="card1" name="card1" value="Bike"/>
-                    <label htmlFor="card1"></label>
+                    <input type="checkbox" id={`card_${id}`} name={`card_${id}`} value="Bike"/>
+                    <label htmlFor={`card_${id}`}></label>
                 </div>
                 <div className={styles.tasktitle}>
                     <h3>
@@ -26,33 +26,6 @@ class Taskcards extends Component {
         return (
             <div className={styles.Taskcardslist}>
                 {this.tasklist}
-                {/* <div className={styles.Taskcard}>
-                    abc 2
-                </div>
-                <div className={styles.Taskcard}>
-                    abc 3
-                </div>
-                <div className={styles.Taskcard}>
-                    abc 4
-                </div>
-                <div className={styles.Taskcard}>
-                    abc5
-                </div>
-                <div className={styles.Taskcard}>
-                    abc6
-                </div>
-                <div className={styles.Taskcard}>
-                    abc7
-                </div>
-                <div className={styles.Taskcard}>
-                    abc8
-                </div>
-                <div className={styles.Taskcard}>
-                    abc9
-                </div>
-                <div className={styles.Taskcard}>
-                    abc10
-                </div> */}
             </div>
         )
     }

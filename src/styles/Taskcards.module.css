@@ -95,15 +95,15 @@
 }
   
   .taskcheckbox label:after {
-    border: 2px solid #fff !important;
-    border-top: none;
-    border-right: none;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    /* border-right: 2px solid #fff; */
     content: "";
     height: 6px;
-    left: 7px;
+    left: 3px;
     opacity: 0;
     position: absolute;
-    top: 8px;
+    top: 5px;
     transform: rotate(-45deg) !important;
     width: 12px;
   }

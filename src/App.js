@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import styles from './App.module.css'
 import LeftPanel from './components/LeftPanel';
 import RestPanel from './components/RestPanel';

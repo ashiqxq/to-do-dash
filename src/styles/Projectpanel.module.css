@@ -28,6 +28,11 @@
     padding: 2px 4px 2px 4px;
     justify-content: center;
 }
+
+.projectbutton:hover{
+    background-color: rgba(0, 228, 0, 0.671) !important;
+    /* border: 1px solid blue !important; */
+}
 .projectbutton > h5 {
     font-size: 8px;
     overflow: hidden;

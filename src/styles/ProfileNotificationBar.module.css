@@ -9,6 +9,9 @@
     align-items: center;   
 }
 
+.pr_not_btn:hover{
+    background-color: 	#989898;
+}
 .not_bar{
     display: flex;
     flex-direction: row;

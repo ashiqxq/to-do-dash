@@ -10,7 +10,7 @@ class Taskheader extends Component {
                     <h3> Development </h3>
                 </div>
                 <div className={styles.selectbtn}>
-                    <h3> ^ </h3>
+                    <h3> ˇ </h3>
                 </div>
             </div>
         )
