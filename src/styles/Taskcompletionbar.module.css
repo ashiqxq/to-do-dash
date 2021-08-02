@@ -26,3 +26,11 @@
     font-size: 8px;
     margin-bottom: 0px;
 }
+
+.progress{
+    width: 100%;
+}
+
+.task_completion_bar{
+    width: 100%;
+}

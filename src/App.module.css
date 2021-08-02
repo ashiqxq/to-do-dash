@@ -5,6 +5,8 @@
   width: 100%;
   height: 100%;
   background-color: #353a40;
+  min-height: 400px;
+  min-width: 650px;
   border-radius: 15px 15px 15px 15px;
 }
 

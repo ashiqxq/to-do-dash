@@ -23,7 +23,7 @@ class LeftPanel extends Component{
                 <Leftprofilepanel/>
                 <hr className={styles.line}/>
                 <Projectspanel/>
-                <hr id={styles.teambreakhr} className={styles.line}/>
+                {/* <hr id={styles.teambreakhr} className={styles.line}/> */}
                 <Teampanel/>
 
             </div>

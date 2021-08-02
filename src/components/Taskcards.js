@@ -8,7 +8,7 @@ class Taskcards extends Component {
             <div className={styles.taskcheck}>
                 <div className={styles.taskcheckbox}>
                     <input type="checkbox" id="card1" name="card1" value="Bike"/>
-                    <label htmlFfor="card1"></label>
+                    <label htmlFor="card1"></label>
                 </div>
                 <div className={styles.tasktitle}>
                     <h3>

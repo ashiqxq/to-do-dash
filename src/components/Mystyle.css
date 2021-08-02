@@ -8,7 +8,7 @@
     border-radius: 25px;
     align-content: center;
     width: 99%;
-    height: 90%;
+    height: 100%;
     /* box-shadow: 5px 5px 5px #7b304e; */
 }
 .imgavatar {
@@ -29,12 +29,14 @@
       
  }
  .rightcontent{
+     position: relative;
      margin-top: 0%;
     display: flex;
     flex-direction: column;
     height: 65vh;
     /* border-left: grey solid 0.01rem; */
-    
+    width: 100%;
+    height: 100%;
     background-color: rgba(53,58,64,255);
 }
  
@@ -82,14 +84,17 @@
     display: flex;
     margin-left: 5%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* margin-right: 1000px; */
     flex-flow: row;
     align-items: center;
+    width: 100%;
      
 }
  .avatar,.name,.taskcomplete,.documenticon{
     
      margin: 10px;
+     margin-right: 10%;
     
  }
 
@@ -123,7 +128,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-left: 10rem;
+    padding-left: 1%;
     align-items: center;
 
 }
@@ -137,15 +142,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 12%;
     margin-right: 0%;
     width: 101.2%;
+    position: absolute;
+    bottom: -0.5px;
 
 }
 .input{
     color: white;
     padding:17px;
-    padding-left: 0px;
+    padding-left: 10px;
     width: 80%;
     margin-left: 0px;
     background-color: #2c3137;
@@ -157,8 +163,9 @@
     outline: none;
 }
 .linkicon1{
-    margin-left:5% ;
-    margin-right: 5%;
+    /* margin-left:5% ;
+    margin-right: 5%; */
+    width: 7.5%;
 }
 .sendicon{
     /* margin-left: 7%; */

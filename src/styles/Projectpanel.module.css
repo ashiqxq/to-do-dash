@@ -5,6 +5,12 @@
     justify-content: flex-start;
     padding-left: 25px;
     padding-right: 10px;
+    /* overflow: hidden; */
+}
+.Projectspanel{
+    overflow: hidden;
+    height: 25%;
+    /* background-color: blue !important; */
 }
 
 .projectbutton{
