@@ -7,6 +7,7 @@
     background-color: #353a40;
     height: 11%;
     border-bottom: 1px solid rgb(128,128,128, 0.15);
+    border-radius: 0px 15px 0px 0px;
 }
 
 .searchinput{
@@ -26,6 +27,7 @@
     width: 98%;
     border: 0px;
     color: #bdc1c6;
+    border-radius: 0px 15px 0px 0px;
   }
 
   .searchinput > input[type="text"]:focus {

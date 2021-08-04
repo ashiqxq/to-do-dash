@@ -1,10 +1,12 @@
 import React from 'react'
 import './Mystyle.css'
-
+import { useContext } from 'react';
+import { TaskContext } from '../App';
 function TaskDescription() {
+    const {taskcontext} = useContext(TaskContext);
     return (
         <div className="disc">
-            <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore maxime sequi labore unde distinctio vitae accusamus quibusdam voluptatum, culpa illum quo cupiditate porro? Consequuntur, unde perspiciatis. Illo facere itaque reiciendis.</h6>
+            <h6>{taskcontext.body}</h6>
         </div>
     )
 }
