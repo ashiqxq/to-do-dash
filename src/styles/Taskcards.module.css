@@ -114,7 +114,6 @@
   .taskcheckbox label:after {
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    /* border-right: 2px solid #fff; */
     content: "";
     height: 6px;
     left: 3px;

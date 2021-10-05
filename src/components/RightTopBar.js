@@ -8,9 +8,9 @@ function RightTopBar() {
     return (
         <div className="rHeader">
             <div>
-            <avatar className="avatar">
+            <div className="avatar">
                 <img className="imgavatar" src={taskcontext.imageUrl}  alt="Opps" />
-            </avatar>
+            </div>
             </div>
             <div className="name">
                 <h4>{taskcontext.username}</h4>

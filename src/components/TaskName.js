@@ -3,16 +3,30 @@ import { TaskContext } from '../App';
 import './Mystyle.css'
 import { useContext } from 'react';
 
+
 function TaskName() {
-    const {taskcontext} = useContext(TaskContext);
+    const {taskcontext, setTaskcontext} = useContext(TaskContext);
+    const handleClick = taskdata =>{
+        // return function () {
+        //     console.log(
+        //         "2nd level trigger"
+        //     )
+        //     console.log(taskdata);
+        //     setTaskcontext({...taskdata, task_status: !taskdata.task_status}, ()=> {console.log(taskdata)});
+            
+        //   }
+    }
     return (
         <div className="row2">
-            <div className="circleicon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="30" height="30"
-                    viewBox="0 0 172 172"
+            <div className="taskcheckbox1">
+                    <input type="checkbox" 
+                           id={`card1_${taskcontext.id}`} 
+                           name={`card1_${taskcontext.id}`} 
+                           value={`card1_${taskcontext.id}`} 
+                           onClick={handleClick(taskcontext)}
+                    />
 
-                ><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" fontWeight="none" fontSize="none" textAnchor="none"><path d="M0,172v-172h172v172z" fill="none"></path><g><circle cx="24" cy="24" transform="scale(3.58333,3.58333)" r="20" fill="#9b59b6"></circle><path d="M80.59275,109.9725c-2.064,0 -4.128,-0.78833 -5.70108,-2.36142l-21.79742,-21.801c-3.14975,-3.14617 -3.14975,-8.25242 0,-11.40217c3.14617,-3.14975 8.256,-3.14975 11.40217,0l21.79742,21.801c3.14975,3.14617 3.14975,8.25242 0,11.40217c-1.57308,1.57308 -3.63708,2.36142 -5.70108,2.36142z" fill="#ffffff"></path><path d="M80.59275,109.9725c-2.064,0 -4.128,-0.78833 -5.70108,-2.36142c-3.14975,-3.14617 -3.14975,-8.25242 0,-11.40217l34.18142,-34.18142c3.14617,-3.14975 8.256,-3.14975 11.40217,0c3.14975,3.14617 3.14975,8.25242 0,11.40217l-34.18142,34.18142c-1.57308,1.57308 -3.63708,2.36142 -5.70108,2.36142z" fill="#ffffff"></path></g></g></svg>
+                    <label htmlFor={`card1_${taskcontext.id}`}></label>
             </div>
             <div className="description">
                 <h4>{taskcontext.title}</h4>

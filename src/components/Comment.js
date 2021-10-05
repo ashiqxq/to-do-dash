@@ -15,7 +15,7 @@ function Comment() {
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="20" height="20"
                 viewBox="0 0 172 172"
-                ><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" fontSize="none" textAnchor="none" ><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M148.73633,23.26367l-137.01001,49.82373l5.97339,5.96289l81.21289,81.22339zM130.76367,41.23633l-36.17627,99.50049l-27.86182,-27.86182l39.19971,-39.19971l-7.60058,-7.60058l-39.19971,39.19971l-27.86182,-27.86182z"></path></g></g></svg>
+                ><g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" ><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M148.73633,23.26367l-137.01001,49.82373l5.97339,5.96289l81.21289,81.22339zM130.76367,41.23633l-36.17627,99.50049l-27.86182,-27.86182l39.19971,-39.19971l-7.60058,-7.60058l-39.19971,39.19971l-27.86182,-27.86182z"></path></g></g></svg>
             </div>
            
         </div>

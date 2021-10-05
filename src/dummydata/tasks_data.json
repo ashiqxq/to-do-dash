@@ -1,15 +1,5 @@
-import React, { Component } from 'react'
-import { TaskContext } from '../App'
-import styles from '../styles/Taskcards.module.css'
-import { useContext } from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
 
-
-
-
-const tasks_data = [
-    {
+    [{
       "userId": 1,
       "id": 1,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
@@ -130,79 +120,3 @@ const tasks_data = [
       "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
     }
 ]
-tasks_data.forEach(function (task_data) {
-  task_data.completed = false;
-});
-function refractor(title){
-    return title.slice()
-}
-// var task_status = new Array(21).fill(false);
-const names = ["", "emmy rosum", "sara emmanuel", "Irene Smith"]
-const img_urls = ["", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg",
-                    "https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg",
-                   "https://pbs.twimg.com/media/BcINeMVCIAABeWd.jpg"]
-function Taskcards() {
-    const {setTaskcontext}  = useContext(TaskContext);
-    const [viewingtask, setviewingtask] = useState(1);
-    useEffect(() => {
-        // Update the document title using the browser API
-        console.log("used effect");
-        handleChange({id:tasks_data[0].id, 
-                       title: tasks_data[0].title,
-                       body: tasks_data[0].body,
-                       userId: tasks_data[0].userId,
-                       task_status: tasks_data[0].completed
-                    })()
-      }, [viewingtask]);
-    const handleChange = taskdata => {
-        return function(){
-            console.log(taskdata);
-            // setviewingtask(taskdata.id);
-            setTaskcontext({id:taskdata.id, 
-                            title: taskdata.title, 
-                            body: taskdata.body, 
-                            imageUrl:img_urls[taskdata.userId], 
-                            username: names[taskdata.userId],
-                            task_status: taskdata.task_status});
-        }
-    };
-    const handleClick = taskdata =>{
-      return function(){
-        setTaskcontext({...taskdata, task_status: !taskdata.task_status});
-      }
-    }
-
-    // let numbers = Array(20).fill().map((x,i)=>i)
-    let tasklist = tasks_data.map((task_data)=>
-        <div className={styles.Taskcard} key={`card_${task_data.id}`} >
-            <div className={styles.taskcheck} onClick={handleChange(task_data)}>
-                <div className={styles.taskcheckbox}>
-                    <input type="checkbox"
-                           id={`card_${task_data.id}`} 
-                           name={`card_${task_data.id}`} 
-                           value={`card_${task_data.id}`}
-                           onClick={handleClick(task_data)} 
-                    />
-
-                    <label htmlFor={`card_${task_data.id}`}></label>
-                </div>
-                <div className={styles.tasktitle}>
-                    <h3>
-                        {refractor(task_data.title)}
-                    </h3> 
-                </div>
-            </div>
-            <div className={styles.tic}>
-                <img className={styles.taskimg} src={img_urls[task_data.userId]}
-                        alt="img"/>
-            </div>
-        </div>
-                        )
-        return (
-            <div className={styles.Taskcardslist}>
-                {tasklist}
-            </div>
-        )
-}
-
-export default Taskcards
